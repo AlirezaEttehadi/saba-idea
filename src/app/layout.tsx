@@ -1,14 +1,11 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
 
 import { NextUIContext } from "@saba-idea/context/next-ui.context";
 import { ProgressContext } from "@saba-idea/context/progress.context";
 
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const myFont = localFont({
   src: [
@@ -49,7 +46,7 @@ export default function RootLayout({
       <body className={myFont.className}>
         <NextUIContext>
           <ProgressContext>
-            <main className="dark text-foreground bg-background p-12">
+            <main className="dark text-foreground bg-background min-h-screen p-12">
               {children}
             </main>
           </ProgressContext>
