@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex items-center flex-col gap-4">
         <h1 className="text-yellow-400">به وبسایت فیلیمو خوش‌آمدید!</h1>
         <Button as={Link} variant="flat" href="/movies" color="warning">
-          Go to movies
+          فیلم‌ها
         </Button>
       </div>
     </div>

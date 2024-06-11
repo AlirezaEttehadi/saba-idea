@@ -18,7 +18,7 @@ export default function NotFound() {
           href="/"
           color="warning"
         >
-          Go back home
+          بازگشت به خانه
         </Button>
       </div>
     </main>
