@@ -49,7 +49,7 @@ export default function RootLayout({
       <body className={myFont.className}>
         <NextUIContext>
           <ProgressContext>
-            <main className="dark text-foreground bg-background h-screen p-12">
+            <main className="dark text-foreground bg-background p-12">
               {children}
             </main>
           </ProgressContext>

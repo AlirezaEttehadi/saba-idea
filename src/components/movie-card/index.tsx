@@ -6,7 +6,7 @@ import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 type Props = {
   movieName: string;
   movieImage: string;
-  movieRate: number;
+  movieRate: string;
 };
 
 const MovieCard: FC<Props> = (props) => {
