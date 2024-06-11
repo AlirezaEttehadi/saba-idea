@@ -8,6 +8,7 @@ import MovieCard from "@saba-idea/components/movie-card";
 import RateFilter from "@saba-idea/components/rete-filter";
 import moviesData from "@saba-idea/data/index.json";
 import { filterAndSortMovies } from "@saba-idea/helper/movies";
+import { Movie } from "@saba-idea/models";
 
 export default function MoviesPage() {
   const searchParams = useSearchParams();
@@ -34,9 +35,10 @@ export default function MoviesPage() {
         لیست تمامی فیلم و سریال‌ها
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  gap-4">
-        {selectedMovies.map((movie: any) => {
+        {selectedMovies.map((movie: Movie) => {
           return (
             <MovieCard
+              key={movie.id}
               movieName={movie.movie_title}
               movieImage={movie.pic.movie_img_s}
               movieRate={movie.rate_avrage}
