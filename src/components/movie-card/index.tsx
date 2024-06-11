@@ -23,8 +23,8 @@ const MovieCard: FC<Props> = (props) => {
         />
       </CardBody>
       <CardFooter className="text-[10px] justify-between gap-8">
-        <span className="text-gray-900">{props.movieName}</span>
-        <span className="text-gray-700">امتیاز {props.movieRate}</span>
+        <span className="text-white">{props.movieName}</span>
+        <span className="text-white">امتیاز {props.movieRate}</span>
       </CardFooter>
     </Card>
   );

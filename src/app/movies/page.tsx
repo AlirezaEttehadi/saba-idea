@@ -12,9 +12,9 @@ export default function MoviesPage() {
         <GenreFilter />
         <RateFilter />
       </div>
-      <span className="text-gray-200 text-xs font-bold">
+      <div className="text-gray-200 text-xs font-bold mt-12 mb-4">
         لیست تمامی فیلم و سریال‌ها
-      </span>
+      </div>
       <Card shadow="sm" isPressable>
         <CardBody className="overflow-visible p-0">
           <Image
@@ -27,8 +27,8 @@ export default function MoviesPage() {
           />
         </CardBody>
         <CardFooter className="text-[10px] justify-between gap-8">
-          <span className="text-gray-900">عنوان فیلم</span>
-          <span className="text-gray-700">امتیاز ۹.۹</span>
+          <span className="text-white">عنوان فیلم</span>
+          <span className="text-white">امتیاز ۹.۹</span>
         </CardFooter>
       </Card>
     </div>
