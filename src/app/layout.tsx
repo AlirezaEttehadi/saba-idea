@@ -48,7 +48,11 @@ export default function RootLayout({
     <html lang="fa" dir="rtl">
       <body className={myFont.className}>
         <NextUIContext>
-          <ProgressContext>{children}</ProgressContext>
+          <ProgressContext>
+            <main className="dark text-foreground bg-background h-screen p-12">
+              {children}
+            </main>
+          </ProgressContext>
         </NextUIContext>
       </body>
     </html>

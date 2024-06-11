@@ -2,12 +2,15 @@
 
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 
+import GenreFilter from "@saba-idea/components/genre-filter";
+import RateFilter from "@saba-idea/components/rete-filter";
+
 export default function MoviesPage() {
   return (
-    <main>
+    <div>
       <div className="flex items-center gap-4 justify-center">
-        <div>first filter</div>
-        <div>second filter</div>
+        <GenreFilter />
+        <RateFilter />
       </div>
       <span className="text-gray-200 text-xs font-bold">
         لیست تمامی فیلم و سریال‌ها
@@ -28,6 +31,6 @@ export default function MoviesPage() {
           <span className="text-gray-700">امتیاز ۹.۹</span>
         </CardFooter>
       </Card>
-    </main>
+    </div>
   );
 }
